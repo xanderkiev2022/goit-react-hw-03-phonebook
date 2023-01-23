@@ -21,7 +21,7 @@ export class App extends Component {
 
   componentDidMount() {
     const localData = localStorage.getItem(LS_KEY);
-    if (localData) {                                         //перевірка, що localStorage не пустий
+    if (localData) {                                        //перевірка, що localStorage не пустий
       this.setState({ contacts: JSON.parse(localData) });
     } 
     // else this.setState({ contacts: [] }); //перезатираємо localStorage
